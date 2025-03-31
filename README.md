@@ -255,8 +255,6 @@ pytest
 # Run with coverage report
 pytest --cov=app
 
-# Generate HTML coverage report
-pytest --cov=app --cov-report=html
 ```
 
 ### Test Coverage
