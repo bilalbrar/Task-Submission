@@ -165,6 +165,3 @@ pytest --cov=app
 
 
 
-## License
-
-MIT License
