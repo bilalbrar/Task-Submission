@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+nltk
+pytest
+httpx
+python-dotenv
+prometheus-client
+pydantic-settings
