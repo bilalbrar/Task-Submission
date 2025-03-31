@@ -1,10 +1,5 @@
 import os
 import sys
-
-# Add the project root directory to the Python path
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-sys.path.insert(0, project_root)
-
 import argparse
 import joblib
 import pandas as pd
@@ -16,6 +11,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score
 from app.core.logging import logger
+
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, project_root)
 
 # Download NLTK data
 nltk.download('punkt', quiet=True)
@@ -85,7 +84,7 @@ def preprocess_data(data_path: str, output_path: str = None):
         df_sentences = pd.DataFrame(rows)
         logger.info(f"Extracted {len(df_sentences)} sentences with labels")
         
-        # Save preprocessed data if output path is provided
+        # Save preprocessed data to output path provided
         if output_path:
             df_sentences.to_csv(output_path, index=False)
             logger.info(f"Saved preprocessed data to {output_path}")

@@ -18,7 +18,7 @@ def test_singleton_pattern(mock_joblib_load):
     # Subsequent loads should return same instance
     model2 = load_model("different_path.pkl")
     assert model2 == model1
-    assert mock_joblib_load.call_count == 1  # Still only called once
+    assert mock_joblib_load.call_count == 1  
     
     # get_model should return same instance
     assert get_model() == model1

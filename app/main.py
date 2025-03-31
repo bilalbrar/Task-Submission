@@ -59,7 +59,7 @@ class MetricsMiddleware(BaseHTTPMiddleware):
         REQUEST_LATENCY.labels(
             method=method,
             endpoint=endpoint
-        ).observe(latency_seconds)  # Ensure this is called
+        ).observe(latency_seconds) 
         
         return response
 

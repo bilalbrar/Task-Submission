@@ -162,6 +162,7 @@ pytest
 
 # Run with coverage report
 pytest --cov=app
+```
 
 
 
