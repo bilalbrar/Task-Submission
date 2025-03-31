@@ -67,7 +67,6 @@ After starting the services, you can access:
   - Metrics: [http://localhost:8000/metrics](http://localhost:8000/metrics)
 
 - **Prometheus**: [http://localhost:9090](http://localhost:9090)
-  - Query example: `http_requests_total{endpoint="/api/v1/*"}`
 
 - **Grafana**: [http://localhost:3000](http://localhost:3000)
   - Default credentials: admin/admin
