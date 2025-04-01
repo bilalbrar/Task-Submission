@@ -24,10 +24,10 @@ A production-ready sentiment analysis API built with FastAPI that analyses text 
 
 ### Local Development
 
+ Clone the repository
+
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/sentiment-analysis.git
-cd sentiment-analysis
+cd
 
 # Create and activate virtual environment
 python -m venv venv
