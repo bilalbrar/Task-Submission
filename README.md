@@ -47,7 +47,7 @@ uvicorn app.main:app --reload
 
 ```bash
 # Build and start all services (API, Prometheus, Grafana)
-docker-compose up -d
+docker-compose up --build
 
 # View running services
 docker-compose ps
