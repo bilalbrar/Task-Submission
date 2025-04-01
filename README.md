@@ -252,35 +252,6 @@ The project includes predefined alert rules for Prometheus, located in `alert_ru
 
 You can customise these rules by editing the `alert_rules.yml` file.
 
-## Extending the Project
-
-### Adding New Endpoints
-
-1. Define new routes in `app/api/routes.py`
-2. Add corresponding schemas in `app/api/schemas.py`
-3. Update tests in `tests/test_api.py`
-
-### Using a Different Model
-
-1. Train a new model that has the same prediction interface
-2. Update the `MODEL_PATH` environment variable
-3. Restart the application
-
-### Adding New Metrics
-
-1. Define new metrics in `app/core/metrics.py`
-2. Instrument the application in appropriate locations
-3. Update Prometheus queries and Grafana dashboards
-
-## Troubleshooting
-
-### Common Issues
-
-- **Model not found**: Ensure model file exists at the path specified in `MODEL_PATH`
-- **Latency reporting issues**: Check histogram bucket configuration in `app/main.py`
-- **Prometheus cannot scrape metrics**: Check network settings and targets in `prometheus.yml`
-- **Container connectivity**: Ensure all services are on the same Docker network
-
 ### Logs
 
 Check logs for detailed error messages:
